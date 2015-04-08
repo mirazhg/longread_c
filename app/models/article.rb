@@ -1,4 +1,4 @@
 class Article < ActiveRecord::Base
-  has_may :fields
+  has_many :fields
 
 end

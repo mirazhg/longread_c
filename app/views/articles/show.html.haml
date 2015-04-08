@@ -1,0 +1,10 @@
+%p
+  %strong
+    = @article.caption
+%br
+  %i
+    = @article.lead
+
+= render @article.fields
+= render 'fields/form'
+

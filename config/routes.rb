@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   # resource :articles
-  resource :articles do
+  resources :articles do
     resources :fields
   end
   # The priority is based upon order of creation: first created -> highest priority.
