@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caption: MyText
+  caver_pict: MyString
+  lead: MyText
+  body: MyText
+  teg: MyString
+  unicum: MyString
+  article_id: 
+
+two:
+  caption: MyText
+  caver_pict: MyString
+  lead: MyText
+  body: MyText
+  teg: MyString
+  unicum: MyString
+  article_id: 
