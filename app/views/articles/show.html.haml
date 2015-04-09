@@ -1,3 +1,5 @@
+= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }
+
 %p
   %strong
     = @article.caption
@@ -5,6 +7,8 @@
   %i
     = @article.lead
 
-= render @article.fields
+- @article.fields.each do |field|
+  = render "fields/#{field.teg}", field: field
+-#= render @article.fields
 = render 'fields/form'
 
