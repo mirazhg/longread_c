@@ -9,8 +9,8 @@
     = f.select :teg, [['caver'], ['card'],['only_text'],['set_of_cards']]
   %br
   %p
-    = f.label :caver_pict
-    = f.hidden_field :caver_pict
+    = f.file_field :caver_pict
+    = f.hidden_field :caver_pict_cache
   %br
   %p
     = f.label :lead
@@ -25,4 +25,4 @@
     = f.text_field :unicum
   %br
 
-    = f.submit
+  = f.submit
