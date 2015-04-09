@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem 'haml'
 gem 'carrierwave'
+gem 'mini_magick'
