@@ -1,4 +1,9 @@
 class FieldsController < ApplicationController
+  def edit
+    @article = Article.find(params[:article_id])
+    @field = @article.fields.find(params[:id])
+  end
+
   def create
     @article = Article.find(params[:article_id])
     @field = @article.fields.create(field_params)
@@ -6,8 +11,14 @@ class FieldsController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[:id])
-    redirect_to article_path(@article) if @article.fields.update(field_params)
+    @article = Article.find(params[:article_id])
+    @field = @article.fields.find(params[:id])
+    if @field.update(field_params)
+      redirect_to article_path(@article)
+    else
+      render 'edit'
+    end
+
   end
 
   def destroy

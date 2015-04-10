@@ -1,0 +1,28 @@
+%p -------------------Edit--------------------------------------
+= form_for [@article, @field] do |f|
+  %p
+    = f.label :caption
+    = f.text_field :caption
+  %br
+  %p
+    = f.label :teg
+    = f.select :teg, [['caver'], ['card'],['only_text'],['set_of_cards']]
+  %br
+  %p
+    = f.file_field :caver_pict
+    = f.hidden_field :caver_pict_cache
+  %br
+  %p
+    = f.label :lead
+    = f.text_area :lead
+  %br
+  %p
+    = f.label :body
+    = f.text_area :body
+  %br
+  %p
+    = f.label :unicum
+    = f.text_field :unicum
+  %br
+
+  = f.submit

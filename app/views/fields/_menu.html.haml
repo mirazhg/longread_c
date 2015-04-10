@@ -1,3 +1,4 @@
 
 .b-admin.b-admin_menufield
   = link_to 'Destroy V', [field.article, field], method: :delete, data: { confirm: 'Are you sure?' }
+  /= link_to 'Edit', controller: 'fields', action: 'edit', id: field
