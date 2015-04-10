@@ -1,12 +1,16 @@
 .b-field{
-  height: 100vh;
+  display: block;
+  position: relative;
   clear: both;
   overflow: hidden;
 }
+
+//caver
 .b-field_caver{
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center ;
+  height: 100vh;
 }
 .b-field_caver__caption{
   display: block;
@@ -18,4 +22,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 1px 2px black;
+}
+
+//only-text
+.b-field_onlytext{
+  max-width: 800px ;
+  margin: 0 auto;
+}
+.b-field_onlytext__body{
+  line-height: 36px;
+  padding: 40px 0 40px 0;
 }

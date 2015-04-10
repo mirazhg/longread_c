@@ -1,5 +1,5 @@
-%h ******only_text*******
-%p
-  %strong
-    = field.caption
-%br
+.l-field.l-field_onlytext
+  = render 'fields/menu', field: field
+  .b-field.b-field_onlytext
+    .b-field_onlytext__body
+      = field.body
