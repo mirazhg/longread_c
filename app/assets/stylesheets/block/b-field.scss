@@ -1,0 +1,21 @@
+.b-field{
+  height: 100vh;
+  clear: both;
+  overflow: hidden;
+}
+.b-field_caver{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.b-field_caver__caption{
+  display: block;
+  position: absolute;
+  color: #F7F7F7;
+  font-size: 60px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px black;
+}

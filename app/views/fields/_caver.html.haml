@@ -1,9 +1,6 @@
-%h *******caver*********
-%p
-  %strong
-    = field.caption
-%br
-%p
-  = image_tag(field.caver_pict_url)
+.l-field.l-field_caver
+  .b-field.b-field_caver{:style => 'background-image: url('+field.caver_pict_url+')' }
+    .b-field_caver__caption
+      = field.caption
 
-%br
+

@@ -8,7 +8,7 @@
   %i
     = @article.lead
 
-- @article.fields.each do |field|
+- @article.fields.reverse.each do |field|
   = render "fields/#{field.teg}", field: field
 -#= render @article.fields
 = render 'fields/form'
