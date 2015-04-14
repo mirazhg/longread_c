@@ -1,7 +1,14 @@
-%h ******set_of_cards*******
-%p
-  %strong
-    = field.caption
-%br
 
--#- @article.fields.reverse.each do |field|
+
+.b-field_set-of-cards
+  = render 'fields/menu', field: field
+  .b-field_set-of-cards__caver-pict
+    = image_tag(field.caver_pict_url , size: '200x200')
+  .b-field_set-of-cards__content
+    .b_field_set-of-cards__caption
+      = field.caption
+    .b-field_set-of-cards__lead
+      = field.lead
+    .b-field_set-of-cards__body
+      = field.body
+

@@ -73,3 +73,39 @@
   transform: translateY(-50%);
 }
 
+//set_of_cards
+
+.b-field_set-of-cards{
+  width: 600px;
+  float: left;
+}
+.b-field_set-of-cards__caver-pict{
+  display: block;
+  width: 200px;
+  float: left;
+}
+.b-field_set-of-cards__caver-pict img{
+  border-radius: 50%;
+  box-shadow: #777 1px 1px 3px;
+  border: 1px solid #fff;
+}
+.b-field_set-of-cards__content{
+  width: 360px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 80px;
+}
+.b_field_set-of-cards__caption{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.b-field_set-of-cards__lead{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #777;
+}
+.b-field_set-of-cards__body{
+  line-height: 30px;
+}

@@ -1,4 +1,5 @@
 class FieldsController < ApplicationController
+
   def edit
     @article = Article.find(params[:article_id])
     @field = @article.fields.find(params[:id])
