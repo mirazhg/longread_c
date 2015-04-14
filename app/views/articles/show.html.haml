@@ -1,12 +1,14 @@
-= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }
+.l-field
+  .bg_article
+  = link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }
 
 
-%p
-  %strong
-    = @article.caption
-%br
-  %i
-    = @article.lead
+  %p
+    %strong
+      = @article.caption
+  %br
+    %i
+      = @article.lead
 
 - @article.fields.reverse.each do |field|
   = render "fields/#{field.teg}", field: field

@@ -18,3 +18,19 @@
     padding: 0;
     text-decoration: none;
 }
+
+.bg_article{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: block;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -9999;
+    content: ' ';
+}
+.bg_article_none{
+    background-image: none !important;
+}

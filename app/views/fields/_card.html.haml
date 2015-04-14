@@ -1,5 +1,12 @@
-%h ******card*******
-%p
-  %strong
-    = field.caption
-%br
+= render 'fields/menu', field: field
+.l-field
+  .l-field_card
+    .b-field.b-field_card
+      .b-field_card__caver-pict
+        = image_tag(field.caver_pict_url , size: '200x200')
+        .b_field_card__caption
+          = field.caption
+        .b-field_card__lead
+          = field.lead
+      .b-field_card__body
+        = field.body

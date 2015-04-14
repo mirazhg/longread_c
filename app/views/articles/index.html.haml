@@ -1,2 +1,5 @@
 - @articles.each do |article|
-  = link_to 'caption', article_path(article)
+  .b-article_set
+    .b-article
+      -#= image_tag(field.caver_pict_url , size: '200x200')
+      = link_to 'caption', article_path(article)
