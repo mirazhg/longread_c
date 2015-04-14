@@ -1,11 +1,10 @@
 .b-article_set
   - @articles.each do |article|
-    = link_to (article_path(article)) do
+    = link_to article_path(article), class: 'b-article__link' do
       %span.b-article{:style => "background-image: url(#{article.pict_url})"}
-        -#%span.b-article__pict
-        -#  = image_tag(article.pict_url , size: '200x200') if (article.pict_url)
         %span.b-article__content
-          %span.b-article__caption
-            = article.caption
-          %span.b-article__lead
-            = article.lead
+          %span.v_center
+            %span.b-article__caption
+              = article.caption
+            %span.b-article__lead
+              = article.lead
