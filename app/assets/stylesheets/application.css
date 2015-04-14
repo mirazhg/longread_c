@@ -19,6 +19,8 @@
     text-decoration: none;
 }
 
+a{color: black;}
+
 .bg_article{
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,17 @@
+= form_for @article do |f|
+  %p
+    = f.label 'Заголовок'
+    = f.text_field :caption
+
+
+  %p
+    = f.label 'Вступление'
+    %br
+    = f.text_area :lead
+
+  %p
+    = f.label 'Обложка'
+    = f.file_field :pict
+    = f.hidden_field :pict_cache
+
+  = f.submit

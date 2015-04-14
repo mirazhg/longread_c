@@ -1,0 +1,38 @@
+.b-article_set{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.b-article{
+  display: inline-block;
+  border:1px solid #0cb2ff;
+  margin-left: 10px;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+  border-radius: 2%;
+}
+.b-article__pict{
+  display: block;
+  float: left;
+
+}
+.b-article__content{
+  display: block;
+  height: 200px;
+  padding-top: 20px;
+}
+.b-article__caption{
+  display: block;
+  font-size: 24px;
+}
+.b-article__lead{
+  display: block;
+  font-size: 14px;
+
+}
