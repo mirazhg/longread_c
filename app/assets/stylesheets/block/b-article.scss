@@ -1,20 +1,27 @@
 .b-article_set{
-  width: 100%;
-//  text-align: center;
-  margin-top: 50px;
+  display: flex;
+
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  max-width: 80%;
+  margin: auto;
 }
-.b-article{
-  display: inline-block;
-  border:1px solid #0cb2ff;
-  margin-left: 10px;
+.b-article__link{
   width: 400px;
   height: 200px;
-  overflow: hidden;
-  padding: 5px;
+  margin: 10px;
+
+}
+
+.b-article{
+  display: block;
+  border:1px solid #0cb2ff;
+  width: 400px;
+  height: 200px;
+
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  margin-top: 10px;
   border-radius: 2%;
   transition: background-size 0.5s ease-in;
 }
@@ -43,9 +50,10 @@
   display: block;
   font-size: 24px;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  color: #fff;
+  color: #fefefe;
   font-weight: 500;
-  text-shadow: #2E2F30 1px 1px 3px;
+  text-shadow: #777777 1px 1px 0, #111 0 0 1px;
+
 }
 .b-article__lead{
   display: block;

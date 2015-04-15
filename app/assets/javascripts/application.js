@@ -30,3 +30,5 @@ $(window).on("scroll", function() {
         //end;
     });
 });
+
+//$('.button_reload').on('click',function() {location.reload();})

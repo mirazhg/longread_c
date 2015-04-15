@@ -1,14 +1,14 @@
 
-
-.b-field_set-of-cards
-  = render 'fields/menu', field: field
-  .b-field_set-of-cards__caver-pict
-    = image_tag(field.caver_pict_url , size: '200x200')
-  .b-field_set-of-cards__content
-    .b_field_set-of-cards__caption
-      = field.caption
-    .b-field_set-of-cards__lead
-      = field.lead
-    .b-field_set-of-cards__body
-      = field.body
+.l-field.l-field_set-of-cards
+  .b-field.b-field_set-of-cards
+    = render 'fields/menu', field: field
+    .b-field_set-of-cards__caver-pict
+      = image_tag(field.caver_pict_url , size: '200x200')
+    .b-field_set-of-cards__content
+      .b_field_set-of-cards__caption
+        = field.caption
+      .b-field_set-of-cards__lead
+        = field.lead
+      .b-field_set-of-cards__body
+        = field.body
 
