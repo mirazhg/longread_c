@@ -29,8 +29,7 @@
 %br
 %p ====== Cards ======================================
 %br
-  - @field.cards.each do |card|
-    = render 'cards/ccard', card: card
+  = render 'cards/set_of_cards', field: @field
 
 %br
 %p ****** New Card *******
