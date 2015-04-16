@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caption: MyString
+  caver_pict: MyString
+  lead: MyText
+  body: MyText
+  unicum: MyString
+  field_id: 
+
+two:
+  caption: MyString
+  caver_pict: MyString
+  lead: MyText
+  body: MyText
+  unicum: MyString
+  field_id: 
