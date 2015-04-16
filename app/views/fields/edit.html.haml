@@ -26,3 +26,12 @@
   %br
 
   = f.submit
+%br
+%p ====== Cards ======================================
+%br
+  - @field.cards.each do |card|
+    = render 'cards/ccard', card: card
+
+%br
+%p ****** New Card *******
+= render 'cards/form'

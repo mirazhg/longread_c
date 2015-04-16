@@ -15,7 +15,8 @@ class CardsController < ApplicationController
     @article = Article.find(params[:article_id])
     @field = @article.fields.find(params[:field_id])
     @card = @field.cards.create(card_params)
-    redirect_to article_path(@article)
+    # redirect_to article_path(@article)
+    redirect_to (:back)
   end
 
   # def update

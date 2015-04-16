@@ -1,6 +1,6 @@
 %br
   %p -------------------FORMA--------------------------------------
-  = form_for([@article, @field, @cards.build]) do |f|
+  = form_for([@article, @field, @field.cards.build]) do |f|
     %p
       = f.label :caption
       = f.text_field :caption
