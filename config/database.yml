@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
-  database: longread_c_production
-  username: longread_c
-  password: <%= ENV['LONGREAD_C_DATABASE_PASSWORD'] %>
+  host: ec2-54-246-81-118.eu-west-1.compute.amazonaws.com
+  database: ddclv4t92g4a4s
+  username: vacqdiccrxldct
+  port: 5432
+  password: -wC3R1uMnlU3gQKPgTgd7-gXO-
+

@@ -11,9 +11,9 @@ production:
   api_secret: zhSMCX4WGka4lNjwPFJlonlEUKM
   enhance_image_tag: true
   static_image_support: true
-#test:
-#  cloud_name: mirazhg
-#  api_key: '946566432945743'
-#  api_secret: zhSMCX4WGka4lNjwPFJlonlEUKM
-#  enhance_image_tag: true
-#  static_image_support: false
+test:
+  cloud_name: mirazhg
+  api_key: '946566432945743'
+  api_secret: zhSMCX4WGka4lNjwPFJlonlEUKM
+  enhance_image_tag: true
+  static_image_support: false
