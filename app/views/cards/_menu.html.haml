@@ -1,3 +1,3 @@
 .b-admin.b-admin_menufield
   = link_to 'Destroy  | ', [card.field.article, card.field, card], method: :delete, data: { confirm: 'Are you sure?' }
-  -#= link_to 'Edit ', edit_article_field_path(field.article, field)
+  = link_to 'Edit ', edit_article_field_card_path(card.field.article, card.field, card)

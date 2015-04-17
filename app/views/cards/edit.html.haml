@@ -1,0 +1,25 @@
+%br
+  %p -------------------EDIT CARD--------------------------------------
+  = form_for([@article, @field, @card]) do |f|
+    %p
+      = f.label :caption
+      = f.text_field :caption
+    %br
+    %p
+      = f.file_field :caver_pict
+    -#= f.hidden_field :caver_pict_cache
+    %br
+    %p
+      = f.label :lead
+      = f.text_area :lead
+    %br
+    %p
+      = f.label :body
+      = f.text_area :body
+    %br
+    %p
+      = f.label :unicum
+      = f.text_field :unicum
+    %br
+
+    = f.submit(class: 'button_reload')
