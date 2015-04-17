@@ -80,6 +80,7 @@
   flex-flow: row wrap;
   justify-content: center;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .b-cards_item{
@@ -87,10 +88,12 @@
   align-items: flex-start;
   align-content: flex-end;
 }
-
+   //ccard
 .b-ccard{
-  width: 500px;
+  min-width: 500px;
+//  width: 500px;
   overflow: hidden;
+
 }
 
 .b-ccard__caver-pict{
@@ -108,11 +111,23 @@
 
 .b-ccard__content{
   display: block;
-  width: 300px;
+  max-width: 500px;
   margin-top: 80px;
-  padding-left: 10px;
-  overflow: hidden;
+  margin-left: 200px;
+  position: relative;
+//  overflow: hidden;
 }
+
+.b-ccard__content::before{
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background-color: #fbb9bc;
+  left: -105px;
+  top: 115px;
+}
+
 .b-ccard__caption{
   font-size: 19px;
   font-weight: 300;
@@ -131,4 +146,41 @@
   font-size: 16px;
   color: black;
   line-height: 24px;
+
+}
+
+.b-ccard__body span{
+  display: block;
+  background-color: #ddd;
+  margin: 20px 0 0 0;
+  position: relative;
+  padding: 20px 0;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 16px;
+}
+.b-ccard__body span:first-of-type{
+  margin: 40px 0 0 0;
+}
+.b-ccard__body span:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: #ddd;
+//  z-index: -9999;
+  left: -100px;
+  top: 0;
+}
+
+.b-ccard__body span:before{
+  width: 15px;
+  height: 15px;
+  content: '';
+  background-color: #B00100;
+  border-radius: 50%;
+  position: absolute;
+  left: -122px;
+  border: 10px solid #fff;
+  top: 12px;
+  z-index: 9999;
 }

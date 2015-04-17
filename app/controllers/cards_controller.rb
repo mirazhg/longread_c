@@ -34,9 +34,9 @@ class CardsController < ApplicationController
   def destroy
     @article = Article.find(params[:article_id])
     @field = @article.fields.find(params[:field_id])
-    @card = @article.fields.cards.find(params[:id])
+    @card = @field.cards.find(params[:id])
     @card.destroy
-    redirect_to article_path(@article)
+    redirect_to (:back)
   end
 
   private

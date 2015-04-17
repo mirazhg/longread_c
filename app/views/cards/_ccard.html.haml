@@ -1,4 +1,5 @@
 .b-ccard
+  = render 'cards/menu', card: card
   .b-ccard__caver-pict
     = image_tag(card.caver_pict_url , size: '180x180')
   .b-ccard__content
@@ -7,4 +8,4 @@
     .b-ccard__lead
       = card.lead
     .b-ccard__body
-      = card.body
+      = raw card.body
