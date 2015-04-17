@@ -4,11 +4,12 @@ class PictUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  if Rails.env.production? then
+
+  # if Rails.env.production? then
     include Cloudinary::CarrierWave
-  else
-    include CarrierWave::MiniMagick
-  end
+  # else
+  #   include CarrierWave::MiniMagick
+  # end
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -20,7 +21,10 @@ class PictUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  if Rails.env.production? then cloudinary_transformation :image_metadata=>true
+  if Rails.env.production?
+    process :convert => 'png'
+    cloudinary_transformation :image_metadata=>true
+  end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
