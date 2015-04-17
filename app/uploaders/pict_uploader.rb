@@ -8,7 +8,7 @@ class PictUploader < CarrierWave::Uploader::Base
   if Rails.env.production? then
     include Cloudinary::CarrierWave
 
-    process :convert => 'png'
+    process :convert => 'jpg'
     cloudinary_transformation :image_metadata=>true
   else
     include CarrierWave::MiniMagick
