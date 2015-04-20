@@ -1,30 +1,33 @@
 .l-field
-  %br
-  %p -------------------FORMA--------------------------------------
-  = form_for([@article, @article.fields.build]) do |f|
-    %p
-      = f.label :caption
-      = f.text_field :caption
-    %br
-    %p
-      = f.label :teg
-      = f.select :teg, [['caver'], ['card'],['only_text'],['set_of_cards']]
-    %br
-    %p
-      = f.file_field :caver_pict
-      = f.hidden_field :caver_pict_cache
-    %br
-    %p
-      = f.label :lead
-      = f.text_area :lead
-    %br
-    %p
-      = f.label :body
-      = f.text_area :body
-    %br
-    %p
-      = f.label :unicum
-      = f.text_field :unicum
-    %br
+  %div{:class => "btn btn-primary btn-lg", 'data-toggle' => "modal", 'data-target' => "#myModal"} Добавить поле
 
-    = f.submit(class: 'button_reload')
+.modal.fade#myModal{'tabindex' => "-1", 'role' => "dialog", 'aria-labelledby' => "myModalLabel", 'aria-hidden' => "true"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+        %h4.modal-title#myModalLabel Форма нового поля
+      .modal-body
+
+        = form_for([@article, @article.fields.build]) do |f|
+          .form-group
+            = f.label :caption
+            = f.text_field :caption, class: 'form-control'
+          .form-group
+            = f.label :teg
+            = f.select :teg, [['caver'], ['card'],['only_text'],['set_of_cards']]
+          .form-group
+            = f.file_field :caver_pict
+            = f.hidden_field :caver_pict_cache
+          .form-group
+            = f.label :lead
+            = f.text_area :lead, class: 'form-control'
+          .form-group
+            = f.label :body
+            = f.text_area :body, class: 'form-control'
+          .form-group
+            = f.label :unicum
+            = f.text_field :unicum, class: 'form-control'
+
+
+          = f.submit(class: 'button_reload')

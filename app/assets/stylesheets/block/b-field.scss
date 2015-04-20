@@ -173,14 +173,14 @@
 }
 
 .b-ccard__body span:before{
-  width: 5px;
-  height: 5px;
+  width: 20px;
+  height: 20px;
   content: "";
   background-color: #B00100;
   border-radius: 50%;
   position: absolute;
-  left: -118px;
-  border: 10px solid #FFF;
+  left: -115px;
   top: 16px;
   z-index: 9999;
+  border: 8px solid rgb(255, 255, 255);
 }
