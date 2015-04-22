@@ -1,5 +1,5 @@
 %ul
-  - if can? :update, @article  #user_signed_in?
+  - if user_signed_in?
     %li
       = link_to "My Profile #{current_user.email} |||  #{current_user.role}", edit_user_registration_path
     %li
