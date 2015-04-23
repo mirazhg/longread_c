@@ -1,7 +1,12 @@
-.b-admin{
+.b-admin {
   z-index: 9999;
 }
-.b-admin_menufield{
+.b-admin_menufield {
+  display: block;
+  position: absolute;
+  background-color: #0cb2ff;
+}
+.b-admin_menuarticle {
   display: block;
   position: absolute;
   background-color: #0cb2ff;

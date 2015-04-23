@@ -1,10 +1,12 @@
 .b-article_set
   - @articles.each do |article|
-    = link_to article_path(article), class: 'b-article__link' do
-      %span.b-article{:style => "background-image: url(#{article.pict_url})"}
-        %span.b-article__content
-          %span.v_center
-            %span.b-article__caption
-              = article.caption
-            %span.b-article__lead
-              = article.lead
+    .b-article__link
+      = render 'articles/menu', article: article
+      = link_to article_path(article) do
+        %span.b-article{:style => "background-image: url(#{article.pict_url})"}
+          %span.b-article__content
+            %span.v_center
+              %span.b-article__caption
+                = article.caption
+              %span.b-article__lead
+                = article.lead
