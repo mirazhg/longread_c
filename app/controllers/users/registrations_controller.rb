@@ -10,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super do |resource|
-      resource.role = 'newbie'
+      resource.role = 'buddy'
     end
   end
 

@@ -10,6 +10,11 @@ class Ability
       else
         can :read, :all
       end
+
+      can :manage, Article, :user_id => user.id if user.role == :baddy
+
+
+
     #
     # The first argument to `can` is the action you are giving the user 
     # permission to do.

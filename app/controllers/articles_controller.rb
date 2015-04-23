@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   # load_and_authorize_resource
+  # before_filter :authenticate_user! , :except => [:some_action_without_auth]
   def index
     @articles = Article.all
 
@@ -15,7 +16,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
+    @article = current_user.articles.new(article_params)
 
     @article.save
     redirect_to @article
