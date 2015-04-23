@@ -1,0 +1,46 @@
+.b-mainline{
+  height: 50px;
+  background-color: #101010;
+}
+.b-mainline__logo{
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 400px;
+}
+.b-mainline__logo .logo{
+  color: #fff;
+  font-size: 30px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: 100;
+  line-height: 46px;
+}
+
+.b-mainline__logo .logo span{
+  color: #d58512;
+  font-size: 30px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.b-mainline__sign{
+  display: block;
+  float: right;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.b-mainline__sign>a{
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.b-mainline__sign>a:first-child:after{
+  color: #d58512;
+  content: '|';
+  font-size: 16px;
+  line-height: 50px;
+  margin: 0 10px;
+}

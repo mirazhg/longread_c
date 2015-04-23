@@ -1,15 +1,15 @@
 .l-field
   .bg_article
-  = link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }
-  = link_to 'Edit', edit_article_path(@article)
-  = link_to 'All', articles_path
-
-  %p
-    %strong
-      = @article.caption
-  %br
-    %i
-      = @article.lead
+  -#= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }
+  -#= link_to 'Edit', edit_article_path(@article)
+  -#= link_to 'All', articles_path
+  -#
+  -#%p
+  -#  %strong
+  -#    = @article.caption
+  -#%br
+  -#  %i
+  -#    = @article.lead
 
 - @article.fields.each do |field|
   = render "fields/#{field.teg}", field: field
