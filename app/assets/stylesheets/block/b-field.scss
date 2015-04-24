@@ -48,6 +48,16 @@
 
 .b-field_card__caver-pict {
   min-width: 200px;
+  min-width: 200px;
+}
+
+@media all and (max-width: 600px) {
+  .b-field_card__box {
+    flex-direction: column;
+  }
+  .b-field_card__body {
+    margin: 20px 0 0 0 !important;
+  }
 }
 
 
@@ -72,7 +82,7 @@
 //  width: 600px;
   margin: 0 0 0 20px;
   font-size: 14px;
-  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica, Arial, Lucida Grande, sans-serif;
   line-height: 20px;
 //  position: absolute;
 //  top: 50%;
@@ -138,13 +148,13 @@
   font-size: 19px;
   font-weight: 300;
   color: black;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: Helvetica, Arial, Lucida Grande, sans-serif;
 }
 
 .b-ccard__lead{
   font-size: 19px;
   color: #777;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: Helvetica, Arial, Lucida Grande, sans-serif;
   padding: 10px 0 20px 0;
 }
 
@@ -161,7 +171,7 @@
   margin: 20px 0 0 0;
   position: relative;
   padding: 20px 20px 20px 0;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: Helvetica, Arial, Lucida Grande, sans-serif;
   font-size: 16px;
 }
 .b-ccard__body span:first-of-type{
