@@ -1,19 +1,19 @@
+@import 'mixin/flexbox.scss';
 .b-article_set{
-  display: flex;
-
+//  display: flex;
+  @include flexbox();
   justify-content: flex-start;
   flex-flow: row wrap;
   max-width: 80%;
   margin: 25px auto;
 }
-.b-article__link{
+.b-article__link {
   width: 400px;
   height: 200px;
   margin: 10px;
-
 }
 
-.b-article{
+.b-article {
   display: block;
   border:1px solid #0cb2ff;
   width: 400px;
@@ -26,7 +26,7 @@
   transition: background-size 0.5s ease-in;
 }
 
-.b-article__content{
+.b-article__content {
   display: block;
   position: relative;
   height: 200px;
@@ -34,11 +34,11 @@
   transition: background-color 0.5s ease-in;
 }
 
-.b-article__content:hover{
+.b-article__content:hover {
   background-color: rgba(10,50,150, 0.8);
 }
 
-.v_center{
+.v_center {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.b-article__caption{
+.b-article__caption {
   display: block;
   font-size: 24px;
   font-family: Helvetica, Arial, Lucida Grande, sans-serif;
@@ -55,7 +55,7 @@
   text-shadow: #777777 1px 1px 0, #111 0 0 1px;
 
 }
-.b-article__lead{
+.b-article__lead {
   display: block;
   font-size: 14px;
   margin-top: 10px;
@@ -64,6 +64,6 @@
 
 }
 
-.b-article:hover{
+.b-article:hover {
   background-size: 120%;
 }

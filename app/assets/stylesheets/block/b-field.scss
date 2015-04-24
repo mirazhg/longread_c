@@ -1,3 +1,5 @@
+@import 'mixin/flexbox.scss';
+
 .b-field{
   display: block;
   position: relative;
@@ -42,7 +44,8 @@
 }
 
 .b-field_card__box {
-  display: flex;
+  @include flexbox();
+  //display: flex;
   align-items: center;
 }
 
