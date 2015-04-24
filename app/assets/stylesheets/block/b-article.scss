@@ -1,7 +1,7 @@
 @import 'mixin/flexbox.scss';
 .b-article_set{
 //  display: flex;
-  @include flexbox();
+  @include flexbox;
   justify-content: flex-start;
   flex-flow: row wrap;
   max-width: 80%;

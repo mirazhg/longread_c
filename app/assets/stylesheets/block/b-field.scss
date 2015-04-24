@@ -44,19 +44,19 @@
 }
 
 .b-field_card__box {
-  @include flexbox();
+  @include flexbox;
   //display: flex;
-  align-items: center;
+  @include align-items(center);
 }
 
 .b-field_card__caver-pict {
   min-width: 200px;
-  min-width: 200px;
+  max-width: 200px;
 }
 
 @media all and (max-width: 600px) {
   .b-field_card__box {
-    flex-direction: column;
+    @include flex-direction(column);
   }
   .b-field_card__body {
     margin: 20px 0 0 0 !important;
@@ -95,17 +95,17 @@
 //set_of_cards
 
 .b-cards{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
   margin: 0 auto;
   padding: 40px 0;
 }
 
 .b-cards_item{
   margin: 20px;
-  align-items: flex-start;
-  align-content: flex-end;
+  @include align-items(flex-start);
+  @include align-content(flex-end);
 }
    //ccard
 .b-ccard{
