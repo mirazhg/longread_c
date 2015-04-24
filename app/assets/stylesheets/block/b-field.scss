@@ -43,15 +43,11 @@
 
 .b-field_card__box {
   display: flex;
-  float: left;
   align-items: center;
-  height: 100%;
 }
 
 .b-field_card__caver-pict {
-  display: block;
-  width: 200px;
-  float: left;
+  min-width: 200px;
 }
 
 
