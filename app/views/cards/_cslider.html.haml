@@ -1,7 +1,6 @@
-.b-ccard
+.b-ccard{:style => "background-image: url(#{card.caver_pict_url})" }
   = render 'cards/menu', card: card
-  .b-ccard__caver-pict
-    = image_tag(card.caver_pict_url , size: '180x180')
+
   .b-ccard__content
     .b-ccard__caption
       = card.caption

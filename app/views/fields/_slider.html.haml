@@ -4,8 +4,8 @@
 .swiper-container
   .swiper-wrapper
     .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
-    .swiper-slide Slide 2
-    .swiper-slide Slide 3
+    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
+    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
   <!-- If we need pagination -->
   .swiper-pagination
 
@@ -22,6 +22,10 @@
     loop: true,
     // If we need pagination
     pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    spaceBetween: 0,
+    freeMode: true,
+    paginationClickable: true,
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
