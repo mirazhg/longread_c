@@ -1,0 +1,31 @@
+= render 'fields/menu', field: field
+.l-field.l-field_slider
+
+.swiper-container
+  .swiper-wrapper
+    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
+    .swiper-slide Slide 2
+    .swiper-slide Slide 3
+  <!-- If we need pagination -->
+  .swiper-pagination
+
+  <!-- If we need navigation buttons -->
+  .swiper-button-prev
+  .swiper-button-next
+  <!-- If we need scrollbar -->
+  -#.swiper-scrollbar
+
+:javascript
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    // And if we need scrollbar
+    //scrollbar: '.swiper-scrollbar',
+  })

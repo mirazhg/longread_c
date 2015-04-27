@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require swiper.jquery
 //= require_tree .
+//= require_self
 
 $(window).on("scroll", function() {
     $('.l-field_caver').each(function() {
