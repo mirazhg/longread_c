@@ -3,11 +3,11 @@
 
 .swiper-container
   .swiper-wrapper
-    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
-    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
-    .swiper-slide #{ render 'cards/cslider', card: field.cards[0] if field.cards[0]}
+    - field.cards.each do |card|
+      .swiper-slide.swiper-slide_important #{ render 'cards/cslider', card: card if field.cards[0]}
+
   <!-- If we need pagination -->
-  .swiper-pagination
+  -#.swiper-pagination
 
   <!-- If we need navigation buttons -->
   .swiper-button-prev
@@ -17,19 +17,11 @@
 
 :javascript
     var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: '.swiper-pagination',
-    slidesPerView: 3,
-    spaceBetween: 0,
-    freeMode: true,
-    paginationClickable: true,
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-
-    // And if we need scrollbar
-    //scrollbar: '.swiper-scrollbar',
+      pagination: '.swiper-pagination',
+      slidesPerView: 3,
+      paginationClickable: true,
+      spaceBetween: 20,
+      freeMode: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
   })

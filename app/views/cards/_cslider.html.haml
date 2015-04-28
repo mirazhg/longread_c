@@ -1,10 +1,9 @@
-.b-ccard{:style => "background-image: url(#{card.caver_pict_url})" }
+.b-cslider{:style => "background-image: url(#{card.caver_pict_url})" }
   = render 'cards/menu', card: card
 
-  .b-ccard__content
-    .b-ccard__caption
-      = card.caption
-    .b-ccard__lead
+  .b-cslider__content
+    .b-cslider__caption
+      %b #{ card.caption}
       = card.lead
-    .b-ccard__body
-      = raw card.body
+    .b-cslider__body
+      = card.body
