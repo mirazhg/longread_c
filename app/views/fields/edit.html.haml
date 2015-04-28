@@ -6,7 +6,7 @@
   %br
   %p
     = f.label :teg
-    = f.select :teg, [['caver'], ['card'],['only_text'],['set_of_cards'],['slider']]
+    = f.select :teg, Field::FIELDS_NAME
   %br
   %p
     = f.file_field :caver_pict
