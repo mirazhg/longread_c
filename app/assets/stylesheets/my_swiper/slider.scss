@@ -17,5 +17,5 @@
   @include align-items(center);
 }
 .swiper-slide.swiper-slide_important{
-  @include flex-shrink(1);
+  //@include flex-shrink(1);
 }

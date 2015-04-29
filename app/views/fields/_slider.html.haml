@@ -4,7 +4,7 @@
 .swiper-container
   .swiper-wrapper
     - field.cards.each do |card|
-      .swiper-slide.swiper-slide_important #{ render 'cards/cslider', card: card if field.cards[0]}
+      .swiper-slide.swiper-slide_important #{ render 'cards/cslider', card: card if card}
 
   <!-- If we need pagination -->
   -#.swiper-pagination
@@ -19,7 +19,7 @@
     var mySwiper = new Swiper ('.swiper-container', {
       pagination: '.swiper-pagination',
       slidesPerView: 3,
-      paginationClickable: true,
+      //paginationClickable: true,
       spaceBetween: 20,
       freeMode: true,
       nextButton: '.swiper-button-next',
