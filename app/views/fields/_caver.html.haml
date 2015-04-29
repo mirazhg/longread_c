@@ -1,5 +1,5 @@
 = render 'fields/menu', field: field
-.l-field_caver
+.l-field_caver{:id => "field_id_#{field.id}"}
   .b-field.b-field_caver{:style => "background-image: url(#{field.caver_pict_url})" }
     .b-field_caver__caption
       = field.caption

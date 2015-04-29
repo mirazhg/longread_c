@@ -24,7 +24,7 @@ class CardsController < ApplicationController
     @field = @article.fields.find(params[:field_id])
     @card = @field.cards.find(params[:id])
     if @card.update(card_params)
-      redirect_to article_path(@article)
+      redirect_to article_path(@article)+"#field_id_#{@field.id}"
     else
       render 'edit'
     end

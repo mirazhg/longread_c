@@ -33,4 +33,3 @@ $(window).on("scroll", function() {
     });
 });
 
-//$('.button_reload').on('click',function() {location.reload();})
