@@ -1,25 +1,34 @@
-%br
-  %p -------------------FORMA--------------------------------------
-  = form_for([@article, @field, @field.cards.build]) do |f|
-    %p
-      = f.label :caption
-      = f.text_field :caption
-    %br
-    %p
-      = f.file_field :caver_pict
-      -#= f.hidden_field :caver_pict_cache
-    %br
-    %p
-      = f.label :lead
-      = f.text_area :lead
-    %br
-    %p
-      = f.label :body
-      = f.text_area :body
-    %br
-    %p
-      = f.label :unicum
-      = f.text_field :unicum
-    %br
+-#%br
+-#  %p -------------------FORMA--------------------------------------
+-#  = form_for([@article, @field, @field.cards.build]) do |f|
+-#    %p
+-#      = f.label :caption
+-#      = f.text_field :caption
+-#    %br
+-#    %p
+-#      = f.file_field :caver_pict
+-#      -#= f.hidden_field :caver_pict_cache
+-#    %br
+-#    %p
+-#      = f.label :lead
+-#      = f.text_area :lead
+-#    %br
+-#    %p
+-#      = f.label :body
+-#      = f.text_area :body
+-#    %br
+-#    %p
+-#      = f.label :unicum
+-#      = f.text_field :unicum
+-#    %br
+-#
+-#    = f.submit(class: 'button_reload')
 
-    = f.submit(class: 'button_reload')
+= simple_form_for([@article, @field, @field.cards.build]) do |f|
+  = f.input :caption
+  = f.input :caver_pict, as: :file
+  = f.input :lead
+  = f.input :body
+  = f.input :unicum
+
+  = f.button :submit

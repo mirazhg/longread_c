@@ -1,36 +1,48 @@
-%p -------------------Edit--------------------------------------
-= form_for [@article, @field] do |f|
-  %p
-    = f.label :caption
-    = f.text_field :caption
-  %br
-  %p
-    = f.label :teg
-    = f.select :teg, Field::FIELDS_NAME
-  %br
-  %p
-    = f.file_field :caver_pict
-    = f.hidden_field :caver_pict_cache
-  %br
-  %p
-    = f.label :lead
-    = f.text_area :lead
-  %br
-  %p
-    = f.label :body
-    = f.text_area :body
-  %br
-  %p
-    = f.label :unicum
-    = f.text_field :unicum
-  %br
+-#%p -------------------Edit--------------------------------------
+-#= form_for [@article, @field] do |f|
+-#  %p
+-#    = f.label :caption
+-#    = f.text_field :caption
+-#  %br
+-#  %p
+-#    = f.label :teg
+-#    = f.select :teg, Field::FIELDS_NAME
+-#  %br
+-#  %p
+-#    = f.file_field :caver_pict
+-#    = f.hidden_field :caver_pict_cache
+-#  %br
+-#  %p
+-#    = f.label :lead
+-#    = f.text_area :lead
+-#  %br
+-#  %p
+-#    = f.label :body
+-#    = f.text_area :body
+-#  %br
+-#  %p
+-#    = f.label :unicum
+-#    = f.text_field :unicum
+-#  %br
+-#
+-#  = f.submit
+.col-md-6
+  = simple_form_for [@article, @field] do |f|
+    = f.input :caption
+    = f.input :teg, as: :select, collection: Field::FIELDS_NAME.map{|field| [field, field]}, prompt: nil
 
-  = f.submit
-%br
-%p ====== Cards ======================================
-%br
-  = render 'cards/set_of_cards', field: @field
+    = f.input :caver_pict, as: :file
+    = f.input :lead
+    = f.input :body
+    = f.input :unicum
 
-%br
-%p ****** New Card *******
-= render 'cards/form'
+    = f.button :submit
+
+.col-md-4
+  %p ====== Cards ======================================
+  %br
+    = render 'cards/set_of_cards', field: @field
+
+  %br
+  %p ****** New Card *******
+  = render 'cards/form'
