@@ -24,11 +24,11 @@
 -#
 -#    = f.submit(class: 'button_reload')
 
-= simple_form_for([@article, @field, @field.cards.build]) do |f|
-  = f.input :caption
-  = f.input :caver_pict, as: :file
-  = f.input :lead
-  = f.input :body
-  = f.input :unicum
+= simple_form_for [@article, @field, @field.cards.build]  do |f|
+  = f.input :caption, input_html: { class: 'input-sm' }
+  = f.input :caver_pict, as: :file, input_html: { class: 'btn-sm' }
+  = f.input :lead, input_html: { class: 'input-sm' }
+  = f.input :body, input_html: { class: 'input-sm' }
+  = f.input :unicum, input_html: { class: 'input-sm' }
 
   = f.button :submit

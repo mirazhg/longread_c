@@ -1,0 +1,29 @@
+.b-cards-for-form {
+  border: 2px solid #286090;
+  height: 300px;
+  overflow: auto;
+  table {
+    width: 100%;
+
+
+    td{
+      padding: 10px;
+      font-size: 10px;
+      vertical-align: top;
+      border: 1px solid #a6e1ec;
+    }
+    tr.menu {
+      height: 24px;
+      background-color: #0cb2ff;
+
+      .b-admin_menufield {
+        position: relative;
+      }
+      td{
+
+        padding: 2px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.b-cards-for-form
+  %table
+    - field.cards.each do |card|
+      %tr.menu
+        %td{:colspan => '3'}
+          = render 'cards/menu', card: card
+      %tr
+        %td
+          = image_tag(card.caver_pict_url , size: '50x50')
+        %td
+          %b #{card.caption}
+          %br
+          %br
+          = card.lead
+        %td
+          = card.body

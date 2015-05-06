@@ -39,10 +39,10 @@
     = f.button :submit
 
 .col-md-4
-  %p ====== Cards ======================================
+  -#%p ====== Cards ======================================
   %br
-    = render 'cards/set_of_cards', field: @field
+    = render 'cards/cards_for_form', field: @field
 
   %br
-  %p ****** New Card *******
+  -#%p ****** New Card *******
   = render 'cards/form'
